@@ -1,74 +1,73 @@
-
-    @keyframes containerFadeIn {
-        from {
-            opacity: 0;
-            transform: scale(1.3);
-        }
-        to {
-            opacity: 1;
-            transform: scale(1);
-        }
+@keyframes containerFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(1.3);
     }
-
-    @keyframes containerFadeOut {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;
-        }
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
+}
 
-    .maya-notice-container {
-        position: fixed;
-        z-index: 10000;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        animation: containerFadeIn .3s ease 1;
-        user-select: none;
+@keyframes containerFadeOut {
+    from {
+        opacity: 1;
     }
+    to {
+        opacity: 0;
+    }
+}
 
-    .maya-notice-hide {
-        animation: containerFadeOut .3s ease 1;
-        animation-fill-mode: forwards;
-    }
+.maya-notice-container {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: containerFadeIn .3s ease 1;
+    user-select: none;
+}
 
-    .maya-notice-overlay {
-        position: absolute;
-        z-index: 10000;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: #00000050;
-    }
+.maya-notice-hide {
+    animation: containerFadeOut .3s ease 1;
+    animation-fill-mode: forwards;
+}
 
-    .maya-notice-box {
-        padding: 15px 25px;
-        margin-bottom: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #000000;
-        font-size: 12px;
-        background-color: white;
-        position: relative;
-        z-index: 10001;
-        border-radius: 3px;
-        box-shadow: 0 1px 3px #00000035;
-    }
+.maya-notice-overlay {
+    position: absolute;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00000050;
+}
 
-    .maya-notice-box > .maya-notice-icon {
-        width: 24px;
-        height: 24px;
-    }
+.maya-notice-box {
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-size: 12px;
+    background-color: white;
+    position: relative;
+    z-index: 10001;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px #00000035;
+}
 
-    .maya-notice-box > .maya-notice-content {
-        margin-left: 10px;
-        font-size: 13px;
-    }
+.maya-notice-box > .maya-notice-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.maya-notice-box > .maya-notice-content {
+    margin-left: 12px;
+    font-size: 14px;
+}

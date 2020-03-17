@@ -1,14 +1,14 @@
 {
-    "name": "maya-notice",
-    "version": "1.0.0",
-    "author": "tongwoo",
-    "description": "A simple, lightweight notification plugin",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "notice"
-    ],
-    "license": "MIT"
+  "name": "maya-notice",
+  "version": "1.0.0",
+  "author": "tongwoo",
+  "description": "A simple, lightweight notification plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "notice"
+  ],
+  "license": "MIT"
 }

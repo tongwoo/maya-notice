@@ -10,7 +10,8 @@ var defaults = {
     content: "",
     duration: 2500,
     maskable: false,
-    onClose: function() {}
+    onClose: function () {
+    }
 };
 
 var iconInfo = `
@@ -97,12 +98,16 @@ function open(config) {
     }
 }
 
-function close() {
+function close(closure) {
     if (container != null) {
         container.classList.add("maya-notice-hide");
         window.setTimeout(() => {
             container.parentNode.removeChild(container);
-            defaults.onClose();
+            if (closure !== undefined) {
+                closure();
+            } else {
+                defaults.onClose();
+            }
         }, 300);
     }
 }

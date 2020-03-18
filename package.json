@@ -1,6 +1,6 @@
 {
   "name": "maya-notice",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "tongwoo",
   "description": "A simple, lightweight notification plugin",
   "main": "index.js",

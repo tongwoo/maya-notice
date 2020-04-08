@@ -3,7 +3,7 @@
  * @author tongwoo <i@wutong.me>
  * @copyright 2020
  */
-"use strict";
+import "core-js/es/object/assign";
 
 let defaults = {
     type: "info", //info,warning,error,success,loading

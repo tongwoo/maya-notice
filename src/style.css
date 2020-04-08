@@ -44,7 +44,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #00000050;
+    background-color: rgba(0,0,0,.5);
 }
 
 .maya-notice-box {
@@ -59,7 +59,7 @@
     position: relative;
     z-index: 10001;
     border-radius: 3px;
-    box-shadow: 0 1px 3px #00000035;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
     max-width: 80%;
 }
 

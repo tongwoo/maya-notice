@@ -1,1 +1,1 @@
-module.exports = require('./src/notice');
+module.exports = require('./dist/notice.js');

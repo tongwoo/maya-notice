@@ -162,6 +162,18 @@ function warning(content, configure) {
     );
 }
 
+function success(content, configure) {
+    open(
+        Object.assign(
+            {
+                type: "success",
+                content
+            },
+            configure
+        )
+    );
+}
+
 function loading(content, configure) {
     open(
         Object.assign(
@@ -182,6 +194,7 @@ module.exports = {
     info,
     error,
     warning,
+    success,
     close,
     loading
 };
